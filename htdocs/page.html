@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-script-type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>サブフォルダ群 | 医学書院図表サービス</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="./assets/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="./assets/js/slick.min.js" type="text/javascript"></script>
+    <script src="./assets/js/common.js" type="text/javascript"></script>
+  </head>
+  <body>
+           <style>
+            .pageList1{
+              padding: 5.0rem;
+              color: #333;
+            }
+            .pageList1 h1{
+              margin-bottom: 1.0em;
+              font-size: 3.0rem;
+            }
+            .pageList1 p{
+              margin-bottom: 0.5em;
+              font-size: 2.4rem;
+            }
+            .pageList1 table{
+              width: 100%;
+              margin-top: 1.5em;
+              font-size: 2.0rem;
+            }
+            .pageList1 tr{
+              border-top: solid 1px #ccc;
+            }
+            .pageList1 th, .pageList1 td{
+              padding: 5px;
+            }
+            .pageList1 th:nth-child(2), .pageList1 td:nth-child(2){
+              white-space: nowrap;
+            }
+            .pageList1 * + th, .pageList1 * + td{
+              border-left: dotted 1px #aaa;
+            }
+            .pageList1 thead th{
+              font-weight: bold;
+              text-align: center;
+            }
+            .pageList1 tbody{
+            }
+            .pageList1 tbody th[colspan="4"]{
+              text-align: center;
+              font-weight: bold;
+            }
+            .pageList1 a{text-decoration: underline;}
+            .pageList1 a:hover{text-decoration: none;}
+            @media screen and (max-width: 767px) {
+              html{
+                font-size: 2vw;
+                overflow: scroll;
+              }
+              .pageList1{
+                padding: 1.0rem;
+              }
+              .pageList1 h1{
+                margin-bottom: 0.5em;
+              }
+              .pageList1 table{
+                font-size: 1.2rem;
+              }
+              .pageList1 th:nth-child(4), .pageList1 td:nth-child(4){
+                font-size: 1.0rem;
+              }
+            }
+            
+          </style>
+          <div class="pageList1">
+            <h1>医学書院図表サービス ページ一覧</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>ページ名</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><a href="recent.html">最近見たアセット</a></th>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th><a href="folder.html">フォルダー群</a></th>
+                  <td>ボックス・リスト表示は一画面内で切り替え</td>
+                </tr>
+                <tr>
+                  <th><a href="subfolder.html">サブフォルダ群</a></th>
+                  <td>ボックス・リスト表示は一画面内で切り替え</td>
+                </tr>
+                <tr>
+                  <th><a href="asset.html">アセット群</a></th>
+                  <td>ボックス・リスト表示は一画面内で切り替え</td>
+                </tr>
+                <tr>
+                  <th><a href="asset-detail.html">アセット群 詳細</a></th>
+                  <td>（01、02は一画面内）</td>
+                </tr>
+                <tr>
+                  <th><a href="results.html">検索結果ブラウズ</a></th>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <th><a href="downloads.html">ダウンロード履歴</a></th>
+                  <td>01、02は一画面内</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>

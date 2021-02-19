@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-script-type" content="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>サブフォルダ群 | 医学書院図表サービス</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="./assets/css/style.css?2021" rel="stylesheet" type="text/css" media="all"/>
+    <script src="./assets/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./assets/js/slick.min.js" type="text/javascript"></script>
+    <script src="./assets/js/common.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <div class="l-header">
+        <h1><img src="./assets/img/logo.svg"/><span> 医学書院大学 様</span>
+        </h1>
+        <nav>
+          <div class="sp"><span class="btnCollection"><img src="./assets/img/btn_collection.svg"/></span></div>
+          <form class="pc" action="results.html">
+            <div class="searchBox">
+              <input class="searchTxt" type="text" placeholder="Seach">
+              <button class="btn"><img src="./assets/img/icon_search.svg"/>
+              </button>
+            </div>
+          </form>
+          <dl class="seachDetailBox">
+            <dt> <span class="pc">条件</span>検索</dt>
+            <dd>
+              <form action="results.html">
+                <div class="in">
+                  <div class="ttl"> <span class="txt"> <span class="pc">条件</span>検索</span><span class="btnClose">
+                      <picture>
+                        <source srcset="./assets/img/icon_close-b.svg" media="(max-width: 767px)"/><img src="./assets/img/icon_close.svg"/>
+                      </picture></span></div>
+                  <ul>
+                    <li> <span>キーワード</span>
+                      <input class="txt" type="text">
+                    </li>
+                    <li class="select"> <span>書籍タイトル</span>
+                      <select>
+                        <option value="">SampleText</option>
+                        <option value="">SampleText</option>
+                        <option value="">SampleText</option>
+                      </select>
+                    </li>
+                    <li> <span>ページ</span>
+                      <input class="num" type="number">
+                    </li>
+                  </ul>
+                  <div class="btnBox">
+                    <button class="btn"> 検索</button>
+                  </div>
+                </div>
+              </form>
+            </dd>
+          </dl>
+          <dl class="menuDetailBox">
+            <dt class="menuTtl"> <span class="pc">メニュー</span></dt>
+            <dd class="menuInner">
+              <div class="in"><span class="title">医学書院 図表サービス
+                  <div class="btnCloseSp"><img src="./assets/img/icon_close-b.svg"/>
+                  </div></span>
+                <ul>
+                  <li>
+                    <dl class="download">
+                      <dt>ダウンロード履歴</dt>
+                      <dd><a class="downloadHistory" href="downloads.html"> 施設のダウンロード履歴</a><a class="downloadHistory" href="downloads.html"> 個人のダウンロード履歴</a></dd>
+                    </dl>
+                  </li>
+                  <li><a class="guide" href="#">利用ガイド</a></li>
+                  <li><a class="contact" href="#">お問い合わせ</a></li>
+                  <li><a class="logout" href="#">ログアウト</a></li>
+                </ul>
+                <div class="bottom">
+                  <p>施設名：医学書院大学</p>
+                  <p>ID：mail1234@mail.com</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </nav>
+      </div>
+      <main class="l-cont">
+        <div class="l-menuBg"></div>
+        <div class="l-menu">
+          <div class="spLogo"><img src="./assets/img/logo.svg"/>
+          </div>
+          <div class="in">
+            <dl>
+              <dt> コレクション</dt>
+              <dd> 
+                <ul>
+                  <li><a href="recent.html"><span class="txt recent"> 最近見たアセット図表</span></a></li>
+                  <li><a href="folder.html"><span class="txt"> サンプルテキストサンプルテキスト</span><span class="num"> 1234</span></a></li>
+                  <li><a href="folder.html"> <span class="txt"> サンプルテキストサンプルテキストキストサンプルテキストキストサンプルテキスト</span><span class="num"> 1234</span></a></li>
+                  <li><a href="folder.html"> <span class="txt"> サンプルテキストサンプルテキスト</span><span class="num"> 1234</span></a></li>
+                  <li><a href="folder.html"> <span class="txt"> サンプルテキストサンプルテキスト</span><span class="num"> 1234</span></a></li>
+                </ul>
+                <div class="u-addBox2">
+                  <div class="addBtn2 btnMenu"><img src="./assets/img/icon_plus.svg"></div>
+                  <div class="delBox2">
+                    <div class="box">
+                      <div class="delBtn2 btnMenu"><img src="./assets/img/icon_minus.svg"></div>
+                      <input type="text" value="">
+                      <button class="u-input blue btn">作成</button><span class="error">エラーメッセージエラーメッセージ</span>
+                    </div>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt> ボリューム</dt>
+              <dd> 
+                <ul>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                  <li><a href="#"><span class="txt"> 00393標準細胞生物学第1版</span></a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="l-contInner">
+          <div class="u-ttlBlock">
+            <h2 class="u-ttl1"> 
+              <ul> 
+                <li> <a href="">標準生理学（第9版）</a></li>
+                <li> 第1章 細胞の微細構造と機能</li>
+              </ul>
+            </h2>
+          </div>
+          <div class="l-spScrollArea">
+            <div class="u-controls">
+              <div class="colL">
+                <select class="dispNum">
+                  <option value="">20件</option>
+                  <option value="">50件</option>
+                  <option value="">100件</option>
+                </select>
+                <select class="dispSwitch">
+                  <option value="#dispBox" selected="selected">ボックス表示</option>
+                  <option value="#dispList">リスト表示</option>
+                </select>
+              </div>
+              <div class="colR"><span class="sp resultNum"> 全0000件</span>
+                <div class="pagination-container">
+                  <ul class="pagination">
+                    <li class="page-item disabled PagedList-skipToFirst"><a class="page-link"><<</a></li>
+                    <li class="page-item disabled PagedList-skipToPrevious"><a class="page-link" rel="prev"><</a></li>
+                    <li class="page-item active"><span class="page-link">1</span></li>
+                    <li class="page-item"><a class="page-link" href="/DownloadHistory?page=2">2</a></li>
+                    <li class="page-item"><a class="page-link" href="/DownloadHistory?page=3">3</a></li>
+                    <li class="page-item PagedList-skipToNext"><a class="page-link" href="/DownloadHistory?page=2" rel="next">></a></li>
+                    <li class="page-item PagedList-skipToLast"><a class="page-link" href="/DownloadHistory?page=3">>></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--サブフォルダ群 / ボックス表示-->
+            <article class="l-sceneBlock show" id="dispBox">
+              <div class="u-listWrap">
+                <ul class="u-list1 isFolder sub u-list">
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                  <li> <a href="asset.html">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/100x400/000/fff"></figure><span class="num"> 1234</span>
+                      </div>
+                      <div class="txt"> 
+                        <p>第1章 促通拡散と能動サンプルササンプルササンプルサ</p>
+                      </div></a></li>
+                </ul>
+                <div class="l-totop"><a href="#"><img src="./assets/img/arrow_top.svg"/></a></div>
+                <div class="u-controls sp">
+                  <div class="colR"><span class="sp resultNum"> 全0000件</span>
+                    <div class="pagination-container">
+                      <ul class="pagination">
+                        <li class="page-item disabled PagedList-skipToFirst"><a class="page-link"><<</a></li>
+                        <li class="page-item disabled PagedList-skipToPrevious"><a class="page-link" rel="prev"><</a></li>
+                        <li class="page-item active"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="/DownloadHistory?page=2">2</a></li>
+                        <li class="page-item"><a class="page-link" href="/DownloadHistory?page=3">3</a></li>
+                        <li class="page-item PagedList-skipToNext"><a class="page-link" href="/DownloadHistory?page=2" rel="next">></a></li>
+                        <li class="page-item PagedList-skipToLast"><a class="page-link" href="/DownloadHistory?page=3">>></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!--サブフォルダ群 / リスト表示-->
+            <article class="l-sceneBlock" id="dispList">
+              <div class="u-listWrap">
+                <ul class="u-list2 u-list">
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/48x32/000/fff"></figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/1000x400/000/fff"></figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>12</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="https://dummyimage.com/300x500/000/fff"></figure>
+                      </div>
+                      <p>長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと長いてきすと</p><em>123</em></a></li>
+                  <li><a href="#">
+                      <div class="img unableDl">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                  <li><a href="#">
+                      <div class="img">
+                        <figure><img src="./assets/img/dummy1.png"/>
+                        </figure>
+                      </div>
+                      <p>第1章 促通拡散と能動サンプルサンプル</p><em>1234</em></a></li>
+                </ul>
+                <div class="l-totop"><a href="#"><img src="./assets/img/arrow_top.svg"/></a></div>
+                <div class="u-controls sp">
+                  <div class="colR"><span class="sp resultNum"> 全0000件</span>
+                    <div class="pagination-container">
+                      <ul class="pagination">
+                        <li class="page-item disabled PagedList-skipToFirst"><a class="page-link"><<</a></li>
+                        <li class="page-item disabled PagedList-skipToPrevious"><a class="page-link" rel="prev"><</a></li>
+                        <li class="page-item active"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="/DownloadHistory?page=2">2</a></li>
+                        <li class="page-item"><a class="page-link" href="/DownloadHistory?page=3">3</a></li>
+                        <li class="page-item PagedList-skipToNext"><a class="page-link" href="/DownloadHistory?page=2" rel="next">></a></li>
+                        <li class="page-item PagedList-skipToLast"><a class="page-link" href="/DownloadHistory?page=3">>></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
